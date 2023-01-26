@@ -1,43 +1,17 @@
 <template>
-    <v-card max-width="400" class="mx-auto">
-        <v-system-bar color="pink darken-2" dark>
-            <v-spacer></v-spacer>
+    <v-card max-width="400" class="mx-auto todo-body" color="grey lighten-5">
 
-            <v-icon>mdi-window-minimize</v-icon>
-
-            <v-icon>mdi-window-maximize</v-icon>
-
-            <v-icon>mdi-close</v-icon>
-        </v-system-bar>
-
-        <v-app-bar dark color="pink">
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-            <v-toolbar-title>My Music</v-toolbar-title>
-
-            <v-spacer></v-spacer>
-
-            <v-btn icon>
-                <v-icon>mdi-magnify</v-icon>
-            </v-btn>
+        <v-app-bar dark color="grey">
+            <v-toolbar-title>SomeDay Todo</v-toolbar-title>
         </v-app-bar>
 
         <v-container>
             <v-row dense>
                 <v-col cols="12">
-                    <v-card color="#385F73" dark>
-                        <v-card-title class="text-h5">
-                            Unlimited music now
+                    <v-card color="white" class=" rounded-lg">
+                        <v-card-title class="text-subtitle-2">
+                            Buy Groceries
                         </v-card-title>
-
-                        <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and
-                            offline.</v-card-subtitle>
-
-                        <v-card-actions>
-                            <v-btn text>
-                                Listen Now
-                            </v-btn>
-                        </v-card-actions>
                     </v-card>
                 </v-col>
 
@@ -80,3 +54,10 @@
             })
         }
 </script>
+
+<style scoped>
+.todo-body {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+</style>
